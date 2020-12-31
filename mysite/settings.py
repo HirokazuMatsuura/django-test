@@ -153,7 +153,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db1', #　作成したデータベース名
         'USER': 'root', # ログインユーザー名
-        'PASSWORD': '', # 自分で設定したパスワード
+        'PASSWORD': 'matsuurahirokazu', # 自分で設定したパスワード
         'HOST': '',
         'PORT': '',
         'ATOMIC_REQUESTS': True, # トランザクションをリクエストに関連付けるために必要。Django Oscar推奨。
