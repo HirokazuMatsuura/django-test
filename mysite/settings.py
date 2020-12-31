@@ -148,8 +148,15 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db1', #　作成したデータベース名
+        'USER': 'root', # ログインユーザー名
+        'PASSWORD': '', # 自分で設定したパスワード
+        'HOST': '',
+        'PORT': '',
+        'ATOMIC_REQUESTS': True, # トランザクションをリクエストに関連付けるために必要。Django Oscar推奨。
     }
 }
 
